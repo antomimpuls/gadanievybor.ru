@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Консультации по картам Таро | Эвелина Сергеевна</title>
+<meta name="description" content="Индивидуальные консультации на картах Таро: разбор ситуации в отношениях, личные вопросы, план действий. 14 лет практического опыта. 980+ клиентов. Связь в WhatsApp и Telegram.">
+<meta property="og:title" content="Эвелина Сергеевна — Консультации по картам Таро">
+<meta property="og:description" content="Разбор без спешки вашей ситуации. 14 лет практического опыта. С соблюдением конфиденциальности и по записи.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gadanievybor.ru/">
+<meta property="og:image" content="https://raw.githubusercontent.com/antomimpuls/tarolog-tayna.online/main/Screenshot_3.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script>
+const SITE_SETTINGS = {
+  'phoneNumber': '+79612006179',
+  'telegramEnabled': 1,
+  'telegramNickname': 'Vselena2000000',
+  'consultantName': 'Эвелина Сергеевна',
+  'city': 'Москва',
+  'address': 'г. Москва, ул. Тверская, д. 12, офис 45',
+  'siteUrl': 'https://gadanievybor.ru/',
+  'email': 'help@gadanievybor.ru',
+  'yandexMetrikaId': '112313919',
+  'consultantImageURL': 'https://raw.githubusercontent.com/antomimpuls/gadanievybor.ru/main/Ms7rm4GGiJnKWnigXhf0gAS1zdUS7gnrVCJNXge2_45CIpvWK8Lm2QoCiSnJM9YhJ3mO8rl9LZ5FalkmqEICncKl.jpg',
+  'workingHours': 'круглосуточно',
+  'responseTime': '5-15 минут',
+  'ogrnip': '324169700845231',
+  'inn': '772814395601',
+  'psychicName': 'Оксана Юрьевна',
+  'metrikaMessengerVisible': false
+};
+(function(){
+  var s = SITE_SETTINGS;
+  var d = s.phoneNumber.replace(/\D/g,'');
+  var msg = encodeURIComponent('Здравствуйте, ' + s.consultantName + '! Хочу записаться на консультацию.');
+  window.WA_URL = d ? 'https://wa.me/' + d + '?text=' + msg : '';
+  window.TG_URL = s.telegramEnabled && s.telegramNickname
+    ? 'https://t.me/' + s.telegramNickname.replace(/^@/,'') + '?text=' + msg : '';
+  window.YM_ID = Number(s.yandexMetrikaId || 0);
+  function fmt(p){var n=p.replace(/\D/g,'');return n.length===11&&n[0]==='7'?'+7 ('+n.substr(1,3)+') '+n.substr(4,3)+'-'+n.substr(7,2)+'-'+n.substr(9,2):p;}
+  window.FORMATTED_PHONE = fmt(s.phoneNumber);
+})();
+
+const SITE_STATS_TRACKER_CONFIG = {
+    projectUrl: "https://stats.72-56-243-254.sslip.io",
+    anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTc4NTI4MDExMywiZXhwIjoyMTAwNjQwMTczfQ.0x8zFbwVKrrBnbBshUtKTiILItt0M6MI68W-hL9bK9o",
+    domain: "gadanievybor.ru"
+};
+
+/* ADSPOWER_SITE_STATS_TRACKER_START */
+(function(){
+    // Fail-closed: Метрика видит переходы только при явном true.
+    const METRIKA_MESSENGER_VISIBLE = SITE_SETTINGS.metrikaMessengerVisible === true;
+    const STORAGE_KEYS = {
+        visitor: 'adspower_site_stats_visitor',
+        session: 'adspower_site_stats_session',
+        pendingClicks: 'adspower_site_stats_pending_clicks'
+    };
+    const PAGE_LOAD_TS = Date.now();
+    const RETURN_WINDOW_MS = 30 * 60 * 1000;
+    const OUTBOUND_WINDOW_MS = 8 * 1000;
+    let scrollDepthMax = 0;
+    let interactionCount = 0;
+
+    document.addEventListener('scroll', function(){
+        try {
+            const h = Math.max(document.body.scrollHeight || 0, document.documentElement.scrollHeight || 0);
+            const sd = h > 0 ? Math.min(100, Math.round(((window.scrollY || 0) + (window.innerHeight || 0)) / h * 100)) : 0;
+            if (sd > scrollDepthMax) scrollDepthMax = sd;
+        } catch (err) {}
+    }, {passive: true});
+    ['mousemove', 'touchstart', 'keydown', 'click'].forEach(function(evt){
+        document.addEventListener(evt, function(){ interactionCount++; }, {passive: true, capture: true});
+    });
+
+    // Сигналы аутентичности последнего действия пользователя (антибот).
+    let lastPointerType = null;
+    let lastTrusted = null;
+    let lastUserEventTs = 0;
+    let honeypotTripped = false;
+    ['pointerdown', 'mousedown', 'touchstart', 'click'].forEach(function(evt){
+        document.addEventListener(evt, function(e){
+            try {
+                lastTrusted = (e && e.isTrusted === true);
+                if (e && typeof e.pointerType === 'string' && e.pointerType) {
+                    lastPointerType = e.pointerType;
+                } else if (e && e.type === 'touchstart') {
+                    lastPointerType = 'touch';
+                } else if (e && (e.type === 'mousedown' || e.type === 'click') && !lastPointerType) {
+                    lastPointerType = 'mouse';
+                }
+                lastUserEventTs = Date.now();
+            } catch (err) {}
+        }, {passive: true, capture: true});
+    });
+
+    // Honeypot-приманка: невидимая ссылка-кнопка вне экрана. Реальный человек
+    // её не видит и не кликнет. Клик по ней = на странице бот, кликающий
+    // элементы вслепую (типичное скликивание по рекламе).
+    (function installHoneypot(){
+        try {
+            const hp = document.createElement('button');
+            hp.type = 'button';
+            hp.textContent = 'WhatsApp';
+            hp.setAttribute('aria-hidden', 'true');
+            hp.tabIndex = -1;
+            hp.style.cssText = 'position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;';
+            hp.addEventListener('click', function(e){
+                try { e.preventDefault(); e.stopPropagation(); } catch (err) {}
+                honeypotTripped = true;
+            });
+            const mount = function(){ try { (document.body || document.documentElement).appendChild(hp); } catch (err) {} };
+            if (document.body) { mount(); } else { document.addEventListener('DOMContentLoaded', mount); }
+        } catch (err) {}
+    })();
+
+    function getStorageValue(key){
+        try {
+            const raw = localStorage.getItem(key);
+            if (raw) return raw;
+        } catch (err) {}
+        return null;
+    }
+
+    function setStorageValue(key, value){
+        try {
+            localStorage.setItem(key, value);
+        } catch (err) {}
+    }
+
+    function createId(){
+        if (window.crypto && typeof window.crypto.randomUUID === 'function') {
+            return window.crypto.randomUUID();
+        }
+        return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 12)}`;
+    }
+
+    function getVisitorKey(){
+        // Ротация раз в 30 дней: для дедупликации достаточно, вечный ID не нужен.
+        const cacheKey = `${STORAGE_KEYS.visitor}:${Math.floor(Date.now() / (30 * 24 * 60 * 60 * 1000))}`;
+        const cached = getStorageValue(cacheKey);
+        if (cached) return cached;
+        const created = createId();
+        setStorageValue(cacheKey, created);
+        return created;
+    }
+
+    function getSessionKey(){
+        const cacheKey = `${STORAGE_KEYS.session}:${new Date().toISOString().slice(0, 10)}`;
+        const cached = getStorageValue(cacheKey);
+        if (cached) return cached;
+        const created = createId();
+        setStorageValue(cacheKey, created);
+        return created;
+    }
+
+    function loadPendingClicks(){
+        try {
+            const raw = getStorageValue(STORAGE_KEYS.pendingClicks);
+            if (!raw) return [];
+            const parsed = JSON.parse(raw);
+            if (!Array.isArray(parsed)) return [];
+            const now = Date.now();
+            return parsed.filter(function(p){ return p && p.eventToken && p.savedAt && (now - p.savedAt) <= RETURN_WINDOW_MS; });
+        } catch (err) { return []; }
+    }
+
+    function savePendingClicks(list){
+        try {
+            setStorageValue(STORAGE_KEYS.pendingClicks, JSON.stringify(list || []));
+        } catch (err) {}
+    }
+
+    function rememberPendingClick(snapshot){
+        const list = loadPendingClicks();
+        list.push(snapshot);
+        savePendingClicks(list.slice(-20));
+    }
+
+    function callRpc(body, attempt){
+        attempt = Number(attempt || 0);
+        const headers = {
+            'Content-Type': 'application/json',
+            'apikey': SITE_STATS_TRACKER_CONFIG.anonKey,
+            'Authorization': `Bearer ${SITE_STATS_TRACKER_CONFIG.anonKey}`
+        };
+        return fetch(`${SITE_STATS_TRACKER_CONFIG.projectUrl}/rest/v1/rpc/record_site_click`, {
+            method: 'POST',
+            headers: headers,
+            body: JSON.stringify(body),
+            keepalive: true,
+            mode: 'cors'
+        }).then(function(response){
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            return true;
+        }).catch(function(){
+            if (attempt >= 2) return false;
+            return new Promise(function(resolve){
+                setTimeout(resolve, 500 * Math.pow(2, attempt));
+            }).then(function(){ return callRpc(body, attempt + 1); });
+        });
+    }
+
+    // Надёжный досыл сигналов, которые отправляются в момент ухода со страницы
+    // (outbound/returned). fetchLater() (Chrome/Android 2024+) гарантирует
+    // доставку даже когда вкладка уходит в фон при переходе в приложение
+    // мессенджера — главное лекарство для мобильного трафика. Fallback —
+    // обычный fetch keepalive.
+    function sendReliable(body){
+        try {
+            if (typeof fetchLater === 'function') {
+                fetchLater(`${SITE_STATS_TRACKER_CONFIG.projectUrl}/rest/v1/rpc/record_site_click`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'apikey': SITE_STATS_TRACKER_CONFIG.anonKey,
+                        'Authorization': `Bearer ${SITE_STATS_TRACKER_CONFIG.anonKey}`
+                    },
+                    body: JSON.stringify(body),
+                    activateAfter: 0
+                });
+                return;
+            }
+        } catch (err) {}
+        callRpc(body);
+    }
+
+    function buildBody(snapshot, metadata){
+        function safePageUrl(value){
+            try {
+                const parsed = new URL(value || location.href, location.href);
+                return parsed.origin + parsed.pathname;
+            } catch (err) { return location.origin + location.pathname; }
+        }
+        return {
+            p_site_domain: SITE_STATS_TRACKER_CONFIG.domain,
+            p_channel: snapshot.channel,
+            p_event_token: snapshot.eventToken,
+            p_module_name: snapshot.moduleName || null,
+            p_button_label: snapshot.buttonLabel || null,
+            p_page_url: safePageUrl(snapshot.pageUrl || location.href),
+            p_page_path: snapshot.pagePath || location.pathname,
+            p_referrer: snapshot.referrer ? safePageUrl(snapshot.referrer) : null,
+            p_session_id: snapshot.sessionId || getSessionKey(),
+            p_visitor_key: snapshot.visitorKey || getVisitorKey(),
+            p_client_created_at: snapshot.clientCreatedAt || new Date().toISOString(),
+            p_user_agent: snapshot.userAgent || navigator.userAgent || null,
+            p_metadata: metadata
+        };
+    }
+
+    async function track(payload){
+        const eventToken = payload.eventToken || createId();
+        const dwellMs = Math.max(0, Date.now() - PAGE_LOAD_TS);
+        const initialMeta = {
+            topic: payload.topic || null,
+            title: document.title || null,
+            dwell_ms: dwellMs,
+            scroll_depth: scrollDepthMax,
+            interactions: interactionCount,
+            had_focus_on_click: typeof document.hasFocus === 'function' ? document.hasFocus() : null,
+            is_trusted: (Date.now() - lastUserEventTs <= 2000) ? lastTrusted : null,
+            pointer_type: (Date.now() - lastUserEventTs <= 2000) ? lastPointerType : null,
+            is_webdriver: (typeof navigator !== 'undefined' && navigator.webdriver === true),
+            honeypot_tripped: honeypotTripped,
+            viewport: {
+                w: window.innerWidth || 0,
+                h: window.innerHeight || 0
+            }
+        };
+        const snapshot = {
+            eventToken: eventToken,
+            channel: payload.channel,
+            moduleName: payload.moduleName || null,
+            buttonLabel: payload.buttonLabel || null,
+            pageUrl: location.origin + location.pathname,
+            pagePath: location.pathname,
+            referrer: document.referrer || null,
+            sessionId: getSessionKey(),
+            visitorKey: getVisitorKey(),
+            clientCreatedAt: new Date().toISOString(),
+            userAgent: navigator.userAgent || null,
+            metadata: initialMeta,
+            savedAt: Date.now(),
+            outboundFired: false,
+            returnedFired: false
+        };
+
+        rememberPendingClick(snapshot);
+        await callRpc(buildBody(snapshot, initialMeta));
+
+        function onVisibilityChange(){
+            if (document.visibilityState !== 'hidden') return;
+            if ((Date.now() - snapshot.savedAt) > OUTBOUND_WINDOW_MS) return;
+            if (snapshot.outboundFired) return;
+            snapshot.outboundFired = true;
+            const updatedMeta = Object.assign({}, snapshot.metadata, {
+                outbound_started: true,
+                outbound_started_at: new Date().toISOString()
+            });
+            snapshot.metadata = updatedMeta;
+            const list = loadPendingClicks().map(function(p){
+                return p.eventToken === snapshot.eventToken ? snapshot : p;
+            });
+            savePendingClicks(list);
+            try { sendReliable(buildBody(snapshot, updatedMeta)); } catch (err) {}
+            cleanupOutboundListeners();
+        }
+        function cleanupOutboundListeners(){
+            document.removeEventListener('visibilitychange', onVisibilityChange);
+            window.removeEventListener('pagehide', onVisibilityChange);
+            window.removeEventListener('blur', onVisibilityChange);
+        }
+        document.addEventListener('visibilitychange', onVisibilityChange);
+        window.addEventListener('pagehide', onVisibilityChange);
+        window.addEventListener('blur', onVisibilityChange);
+        setTimeout(cleanupOutboundListeners, OUTBOUND_WINDOW_MS + 1000);
+    }
+
+    function flushReturnSignals(){
+        const list = loadPendingClicks();
+        if (!list.length) return;
+        const now = Date.now();
+        const remaining = [];
+        list.forEach(function(snapshot){
+            const ageMs = now - (snapshot.savedAt || 0);
+            if (ageMs > RETURN_WINDOW_MS || snapshot.returnedFired) return;
+            if (!snapshot.outboundFired) {
+                if (ageMs <= RETURN_WINDOW_MS) remaining.push(snapshot);
+                return;
+            }
+            snapshot.returnedFired = true;
+            const updatedMeta = Object.assign({}, snapshot.metadata || {}, {
+                returned_after_chat: true,
+                returned_at: new Date().toISOString(),
+                away_ms: ageMs
+            });
+            snapshot.metadata = updatedMeta;
+            try { sendReliable(buildBody(snapshot, updatedMeta)); } catch (err) {}
+        });
+        savePendingClicks(remaining);
+    }
+    setTimeout(flushReturnSignals, 1500);
+    window.addEventListener('pageshow', flushReturnSignals);
+    window.addEventListener('focus', flushReturnSignals);
+    document.addEventListener('visibilitychange', function(){
+        if (document.visibilityState === 'visible') flushReturnSignals();
+    });
+
+    window.__siteStatsTracker = {
+        track
+    };
+    window.__METRIKA_MESSENGER_VISIBLE__ = METRIKA_MESSENGER_VISIBLE;
+})();
+/* ADSPOWER_SITE_STATS_TRACKER_END */
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Montserrat',sans-serif;background:#0a0a0f;color:#f5f5f7;line-height:1.6;overflow-x:hidden}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+a{color:inherit;text-decoration:none}
+
+/* ── HEADER ── */
+.site-header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.07)}
+.header-inner{display:flex;justify-content:space-between;align-items:center;min-height:60px;gap:20px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1rem;background:linear-gradient(135deg,#ffd700,#ef4444);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.brand small{display:block;color:#a8a8b8;font-weight:500;font-size:0.75rem;-webkit-text-fill-color:#a8a8b8}
+.nav{display:flex;gap:20px;flex-wrap:wrap}
+.nav a{color:#a8a8b8;font-size:0.85rem;font-weight:600;transition:color 0.2s}
+.nav a:hover{color:#ffd700}
+
+/* ── ОБЩИЕ КНОПКИ ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 32px;border-radius:50px;font-weight:700;font-size:clamp(0.95rem,2vw,1.1rem);text-decoration:none;transition:all 0.3s;border:none;cursor:pointer;text-transform:uppercase;letter-spacing:0.5px}
+.btn-icon{display:inline-flex !important;align-items:center;justify-content:center;flex:0 0 auto;line-height:0;min-width:1.22em;min-height:1.22em}
+.btn-icon svg{width:1.22em;height:1.22em;display:block;overflow:visible}
+.btn-icon-wa,.btn-icon-tg{opacity:1 !important;visibility:visible !important}
+.btn-wa{background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;box-shadow:0 10px 30px rgba(37,211,102,0.35)}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(37,211,102,0.55)}
+.btn-tg{background:linear-gradient(135deg,#60a5fa,#2563eb);color:#fff;box-shadow:0 10px 30px rgba(96,165,250,0.35)}
+.btn-tg:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(96,165,250,0.55)}
+
+/* ── STICKY MESSENGERS ── */
+.sticky-messengers{position:fixed;bottom:20px;right:20px;z-index:999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.sticky-messenger-options{display:flex;flex-direction:column;align-items:flex-end;gap:10px;opacity:0;transform:translateY(8px) scale(.96);pointer-events:none;transition:opacity .22s ease,transform .22s ease}
+.sticky-messengers.is-open .sticky-messenger-options{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
+.sticky-messenger-toggle{width:64px;height:64px;border-radius:999px;padding:0;font-size:1.65rem;line-height:1;background:linear-gradient(135deg,#d18a2b,#8b5e1a);box-shadow:0 20px 40px rgba(0,0,0,0.35),0 10px 26px rgba(209,138,43,0.42);display:inline-flex;align-items:center;justify-content:center;animation:pulse 2.3s infinite}
+.sticky-messenger-toggle:hover{transform:translateY(-3px);box-shadow:0 22px 44px rgba(0,0,0,0.42),0 14px 30px rgba(209,138,43,0.5)}
+.sticky-messenger-option{padding:12px 18px;font-size:0.9rem;min-width:188px;box-shadow:0 20px 40px rgba(0,0,0,0.35)}
+@media(max-width:768px){.sticky-messengers{bottom:15px;right:15px}.sticky-messenger-toggle{width:58px;height:58px;font-size:1.45rem}.sticky-messenger-option{min-width:170px;padding:11px 16px}}
+
+/* ── HERO ── */
+.hero{padding:56px 0 44px;background:linear-gradient(180deg,#0a0a0f,#11111c);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-40%;left:-20%;right:-20%;height:140%;background:radial-gradient(circle,rgba(220,38,38,0.12),transparent 60%);animation:shimmer 8s ease-in-out infinite;pointer-events:none}
+@keyframes shimmer{0%,100%{opacity:0.5}50%{opacity:0.9}}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;position:relative;z-index:1}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:5px 14px;background:rgba(220,38,38,0.12);border:1px solid rgba(220,38,38,0.3);color:#fef2f2;border-radius:50px;font-size:0.78rem;font-weight:600;margin-bottom:14px;text-transform:uppercase}
+h1{font-size:clamp(1.7rem,4.5vw,2.8rem);font-weight:800;line-height:1.2;background:linear-gradient(135deg,#ffd700,#dc2626);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px}
+.hero-lead{font-size:clamp(1rem,2.2vw,1.15rem);color:#ddd6fe;font-weight:500;margin-bottom:20px}
+.hero-note{font-size:0.82rem;color:#6b7280;margin-top:14px;line-height:1.5;font-style:italic}
+.trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin:18px 0 22px}
+.trust-item{display:flex;align-items:center;gap:8px;padding:9px 12px;background:rgba(220,38,38,0.07);border:1px solid rgba(220,38,38,0.18);border-radius:10px;font-size:0.83rem;font-weight:600}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.cta-row .btn{flex:1 1 200px}
+.phone-link{display:inline-flex;align-items:center;gap:8px;color:#f5f5f7;font-size:1.1rem;font-weight:700;margin-top:14px;transition:color 0.3s}
+.phone-link:hover{color:#ef4444}
+.address-info{margin-top:14px;background:rgba(220,38,38,0.07);padding:12px 14px;border-radius:12px;border:1px solid rgba(220,38,38,0.18);font-size:0.85rem}
+.address-info strong{color:#fef2f2}
+.address-info p{margin:3px 0;color:#a8a8b8}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.08)}
+.stat{text-align:center}
+.stat-num{font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:800;background:linear-gradient(135deg,#ffd700,#ef4444);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block}
+.stat-label{font-size:0.8rem;color:#a8a8b8}
+.hero-img{width:min(280px,62vw);height:min(280px,62vw);margin:0 auto;border-radius:50%;position:relative;overflow:visible;background:radial-gradient(circle at 35% 25%,rgba(239,68,68,0.35),transparent 65%);box-shadow:0 24px 70px rgba(220,38,38,0.4)}
+.hero-img::after{content:'';position:absolute;inset:6px;border-radius:50%;border:2px solid rgba(239,68,68,0.35);box-shadow:0 0 30px rgba(220,38,38,0.5);animation:imgGlow 6s ease-in-out infinite;pointer-events:none;z-index:2}
+@keyframes imgGlow{0%,100%{opacity:0.6}50%{opacity:1}}
+.hero-img img{position:relative;z-index:3;width:100%;height:100%;object-fit:cover;border-radius:50%;border:6px solid rgba(10,10,15,0.8)}
+.psychic-name{text-align:center;margin-top:14px;padding:12px 16px;background:rgba(220,38,38,0.08);border:1px solid rgba(220,38,38,0.25);border-radius:12px}
+.psychic-name-title{font-size:clamp(1.1rem,2.5vw,1.4rem);font-weight:700;background:linear-gradient(135deg,#ffd700,#ef4444);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:4px}
+.psychic-name-sub{font-size:0.82rem;color:#a8a8b8;font-weight:500}
+
+/* ── СЕКЦИИ ── */
+.section{padding:52px 0}
+.bg-alt{background:#0f0f1a}
+.section-header{max-width:700px;margin:0 auto 32px;text-align:center}
+h2{font-size:clamp(1.4rem,3.5vw,2rem);font-weight:700;color:#fff;margin-bottom:10px}
+h3{font-size:clamp(1.05rem,2.5vw,1.3rem);font-weight:700;color:#fff;margin-bottom:10px}
+p{font-size:clamp(0.9rem,1.8vw,1rem);color:#a8a8b8;margin-bottom:10px;line-height:1.6}
+
+/* ── КАРТОЧКИ УСЛУГ ── */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;margin-top:24px}
+.card{background:#131320;border:1px solid rgba(220,38,38,0.1);border-radius:16px;padding:24px 20px;transition:all 0.3s}
+.card:hover{transform:translateY(-7px);box-shadow:0 18px 45px rgba(220,38,38,0.18);border-color:rgba(239,68,68,0.35)}
+.card-icon{font-size:2.2rem;margin-bottom:11px}
+.card ul{list-style:none;padding:0;margin-top:8px}
+.card li{padding:4px 0 4px 20px;position:relative;color:#a8a8b8;font-size:0.88rem}
+.card li::before{content:'✓';position:absolute;left:0;color:#facc15;font-weight:bold}
+
+/* ── КАК ПРОХОДИТ ── */
+.steps{display:flex;flex-direction:column;gap:14px;max-width:700px;margin:0 auto}
+.step{display:flex;align-items:flex-start;gap:18px;background:#131320;border:1px solid rgba(220,38,38,0.1);border-radius:14px;padding:20px}
+.step-num{flex-shrink:0;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#ef4444,#b91c1c);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem;color:#fff}
+
+/* ── ОТЗЫВЫ ── */
+.slider{position:relative;overflow:hidden;max-width:900px;margin:0 auto}
+.slider-wrapper{display:flex;transition:transform 0.5s ease}
+.slider-slide{min-width:100%;box-sizing:border-box}
+.testimonial{background:#131320;padding:22px;border-radius:16px;border-left:3px solid #dc2626}
+.testimonial-header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.avatar{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#ef4444,#b91c1c);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem;color:#fff;flex-shrink:0}
+.stars{color:#facc15;font-size:0.9rem}
+.slider-nav{display:flex;justify-content:center;gap:9px;margin-top:22px}
+.slider-dot{width:11px;height:11px;border-radius:50%;background:rgba(251,146,60,0.3);border:none;cursor:pointer;transition:all 0.3s}
+.slider-dot.active{background:#dc2626;transform:scale(1.3)}
+.slider-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(220,38,38,0.75);border:none;color:#fff;width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:1.4rem;display:flex;align-items:center;justify-content:center;transition:all 0.3s;z-index:10}
+.slider-arrow:hover{background:#dc2626;transform:translateY(-50%) scale(1.08)}
+.slider-arrow.prev{left:8px}
+.slider-arrow.next{right:8px}
+
+/* ── ВАЖНО (ДИСКЛЕЙМЕР) ── */
+.disclaimer{background:#131320;border:1px solid rgba(251,191,36,0.25);border-radius:16px;padding:28px 24px;max-width:800px;margin:0 auto}
+.disclaimer h3{color:#facc15;margin-bottom:14px}
+.disclaimer ul{list-style:none;padding:0}
+.disclaimer li{padding:6px 0 6px 22px;position:relative;color:#d1d5db;font-size:0.9rem;line-height:1.5}
+.disclaimer li::before{content:'—';position:absolute;left:0;color:#facc15}
+
+/* ── CTA ── */
+.cta-section{padding:52px 0;background:#0a0a0f;text-align:center}
+.cta-box{max-width:680px;margin:0 auto;background:linear-gradient(135deg,rgba(251,146,60,0.1),rgba(234,88,12,0.2));padding:40px;border-radius:22px;border:1px solid rgba(251,146,60,0.2)}
+.cta-buttons{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:20px}
+/* ── КОНТАКТЫ + РЕКВИЗИТЫ ── */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.contact-card{background:#131320;border:1px solid rgba(220,38,38,0.1);border-radius:16px;padding:26px 22px}
+.contact-list{list-style:none;padding:0}
+.contact-list li{padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:0.92rem;color:#d1d5db}
+.contact-list li:last-child{border-bottom:none}
+.contact-list a{color:#4ea8ff;transition:color 0.2s}
+.contact-list a:hover{color:#93c5fd}
+
+/* ── ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ ── */
+.privacy-block{background:#131320;border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:32px 28px;max-width:860px;margin:0 auto}
+.privacy-block h3{color:#fef2f2;margin-bottom:18px}
+.privacy-block h4{font-size:1rem;color:#e5e7eb;margin:20px 0 8px;font-weight:700}
+.privacy-block p{font-size:0.88rem;color:#9ca3af;margin-bottom:8px}
+
+/* ── FOOTER ── */
+footer{background:#05050a;padding:28px 0;text-align:center;border-top:1px solid rgba(255,255,255,0.05)}
+footer p{font-size:0.82rem;color:#4b5563;margin-bottom:4px}
+
+/* ── АДАПТИВ ── */
+@media(max-width:1024px){.hero-grid{grid-template-columns:1fr;text-align:center}.hero-img{max-width:480px;margin:0 auto}}
+@media(max-width:768px){.trust-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr;gap:10px}.cards{grid-template-columns:1fr}.cta-row .btn{min-width:unset;flex:1 1 100%}.hero{padding:38px 0 32px}.hero-grid>div:first-child{order:2;margin-top:18px}.hero-grid>div:last-child{order:1}.section{padding:38px 0}.nav{gap:14px}.slider-arrow{width:36px;height:36px;font-size:1.1rem}}
+@media(max-width:480px){.container{padding:0 14px}.btn{padding:13px 20px;font-size:0.88rem}.cta-box{padding:28px 18px}.privacy-block{padding:22px 16px}}
+</style>
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="site-header">
+<div class="container header-inner">
+  <div class="brand" id="brandName">Эвелина Сергеевна
+    <small>Консультации с помощью карт Таро</small>
+  </div>
+  <nav class="nav" aria-label="Навигация">
+    <a href="#about">О консультациях</a>
+    <a href="#services">Услуги</a>
+    <a href="#steps">Как проходит</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+</div>
+</header>
+
+<!-- STICKY КНОПКИ -->
+<div class="sticky-messengers" id="stickyMessengers">
+  <div class="sticky-messenger-options">
+    <a class="btn btn-wa sticky-messenger-option" data-wa="true" role="button" tabindex="0"><span class="btn-icon btn-icon-wa" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><circle cx="16" cy="16" r="16" fill="#25D366"></circle><path fill="#FFFFFF" d="M23.35 8.62A9.55 9.55 0 0 0 16.57 5.9c-5.3 0-9.6 4.3-9.6 9.61 0 1.69.44 3.34 1.28 4.8L6.9 25.1l4.92-1.29a9.56 9.56 0 0 0 4.75 1.21h.01c5.3 0 9.61-4.31 9.61-9.61a9.54 9.54 0 0 0-2.84-6.79Zm-6.78 14.77h-.01a7.93 7.93 0 0 1-4.03-1.1l-.29-.17-2.92.77.78-2.85-.19-.29a7.96 7.96 0 0 1-1.22-4.24c0-4.39 3.57-7.97 7.97-7.97 2.13 0 4.13.83 5.64 2.34a7.92 7.92 0 0 1 2.34 5.64c0 4.4-3.58 7.97-8.07 7.87Zm4.37-5.95c-.24-.12-1.43-.7-1.65-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.75.93-.14.16-.27.18-.51.06-.24-.12-1.01-.37-1.93-1.2-.71-.64-1.2-1.43-1.34-1.67-.14-.24-.01-.37.11-.49.1-.1.24-.27.35-.4.12-.14.16-.24.24-.4.08-.15.04-.29-.02-.4-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.39-.54-.4h-.46c-.16 0-.4.06-.61.29-.22.24-.82.8-.82 1.95 0 1.15.84 2.26.95 2.42.12.16 1.64 2.5 3.96 3.5.55.24.98.39 1.32.49.56.17 1.07.15 1.47.09.44-.07 1.43-.58 1.63-1.15.2-.57.2-1.05.14-1.15-.05-.1-.21-.15-.45-.27Z"></path></svg></span>WhatsApp</a>
+    <a class="btn btn-tg sticky-messenger-option" data-telegram="true" role="button" tabindex="0"><span class="btn-icon btn-icon-tg" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><circle cx="16" cy="16" r="16" fill="#2AABEE"></circle><path fill="#FFFFFF" d="M24.45 9.27 22.1 22.06c-.18.91-.67 1.14-1.35.71l-3.75-2.77-1.81 1.75c-.2.2-.37.37-.76.37l.27-3.84 6.99-6.31c.31-.27-.06-.42-.47-.15l-8.65 5.44-3.73-1.17c-.81-.26-.83-.81.17-1.2l14.57-5.62c.67-.25 1.26.16 1.04 1Z"></path></svg></span>Telegram</a>
+  </div>
+  <button type="button" class="btn sticky-messenger-toggle" id="stickyMessengerToggle" aria-label="Открыть выбор мессенджера" aria-expanded="false">💬</button>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="about">
+<div class="container">
+  <div class="hero-grid">
+    <div>
+      <span class="badge">🔮 Консультант • 14 лет практического опыта</span>
+      <h1>Консультации по картам Таро с разбором вашей ситуации</h1>
+      <p class="hero-lead">Помогаю структурировать мысли, увидеть варианты действий и принять взвешенное решение в вопросах отношений и личной жизни. Веду работу через расклады Таро, проверку ситуации и индивидуальные рекомендации. Веду лично, отправляю отчёты в WhatsApp или Telegram.</p>
+      <div class="trust-grid">
+        <div class="trust-item">💖 Ситуации в отношениях</div>
+        <div class="trust-item">🛡️ Работа с энергетическим состоянием</div>
+        <div class="trust-item">💯 Персональный подход</div>
+        <div class="trust-item">🤫 Полная закрытость личной информации</div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-wa" data-wa="true" role="button" tabindex="0"><span class="btn-icon btn-icon-wa" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><circle cx="16" cy="16" r="16" fill="#25D366"></circle><path fill="#FFFFFF" d="M23.35 8.62A9.55 9.55 0 0 0 16.57 5.9c-5.3 0-9.6 4.3-9.6 9.61 0 1.69.44 3.34 1.28 4.8L6.9 25.1l4.92-1.29a9.56 9.56 0 0 0 4.75 1.21h.01c5.3 0 9.61-4.31 9.61-9.61a9.54 9.54 0 0 0-2.84-6.79Zm-6.78 14.77h-.01a7.93 7.93 0 0 1-4.03-1.1l-.29-.17-2.92.77.78-2.85-.19-.29a7.96 7.96 0 0 1-1.22-4.24c0-4.39 3.57-7.97 7.97-7.97 2.13 0 4.13.83 5.64 2.34a7.92 7.92 0 0 1 2.34 5.64c0 4.4-3.58 7.97-8.07 7.87Zm4.37-5.95c-.24-.12-1.43-.7-1.65-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.75.93-.14.16-.27.18-.51.06-.24-.12-1.01-.37-1.93-1.2-.71-.64-1.2-1.43-1.34-1.67-.14-.24-.01-.37.11-.49.1-.1.24-.27.35-.4.12-.14.16-.24.24-.4.08-.15.04-.29-.02-.4-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.39-.54-.4h-.46c-.16 0-.4.06-.61.29-.22.24-.82.8-.82 1.95 0 1.15.84 2.26.95 2.42.12.16 1.64 2.5 3.96 3.5.55.24.98.39 1.32.49.56.17 1.07.15 1.47.09.44-.07 1.43-.58 1.63-1.15.2-.57.2-1.05.14-1.15-.05-.1-.21-.15-.45-.27Z"></path></svg></span>Написать в WhatsApp</a>
+        <a class="btn btn-tg" data-telegram="true" role="button" tabindex="0"><span class="btn-icon btn-icon-tg" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><circle cx="16" cy="16" r="16" fill="#2AABEE"></circle><path fill="#FFFFFF" d="M24.45 9.27 22.1 22.06c-.18.91-.67 1.14-1.35.71l-3.75-2.77-1.81 1.75c-.2.2-.37.37-.76.37l.27-3.84 6.99-6.31c.31-.27-.06-.42-.47-.15l-8.65 5.44-3.73-1.17c-.81-.26-.83-.81.17-1.2l14.57-5.62c.67-.25 1.26.16 1.04 1Z"></path></svg></span>Связаться в Telegram</a>
+      </div>
+      <p class="hero-note">Консультация имеет информационно-аналитический характер и не даёт гарантии определённого жизненного исхода. Она не служит заменой медицинской, юридической или психологической помощи.</p>
+      <a href="tel:+79592543085" class="phone-link" id="phoneLink">📲 <span id="phoneDisplay">+7 (959) 254-30-85</span></a>
+      <div class="address-info">
+        <strong>📍 Кабинет для приёма</strong>
+        <p id="addressDisplay">г. Москва, ул. Тверская, д. 12, офис 45</p>
+        <p style="color:#10b981;font-weight:600">Личные встречи — по записи. Дистанционные консультации проходят в WhatsApp и Telegram.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="stat-num">2000+</span><span class="stat-label">Проведённых консультаций</span></div>
+        <div class="stat"><span class="stat-num">14</span><span class="stat-label">Лет практической работы</span></div>
+        <div class="stat"><span class="stat-num">94%</span><span class="stat-label">Обращений повторно</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="hero-img">
+        <img id="consultantPhoto" src="https://raw.githubusercontent.com/antomimpuls/gadanievybor.ru/main/Ms7rm4GGiJnKWnigXhf0gAS1zdUS7gnrVCJNXge2_45CIpvWK8Lm2QoCiSnJM9YhJ3mO8rl9LZ5FalkmqEICncKl.jpg" alt="{{NAME}} Сергеевна — консультант по картам Таро">
+      </div>
+      <div class="psychic-name">
+        <div class="psychic-name-title" id="heroName">{{NAME}}</div>
+        <div class="psychic-name-sub">Консультант • Таролог • Наставник</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- УСЛУГИ -->
+<section class="section bg-alt" id="services">
+<div class="container">
+<div class="section-header">
+  <h2>Темы консультаций</h2>
+  <p>Каждую консультацию начинаю с проверки ситуации, делаю индивидуальный расклад и отправляю отчёт в WhatsApp или Telegram.</p>
+</div>
+<div class="cards">
+  <div class="card">
+    <div class="card-icon">💖</div>
+    <h3>Ситуации в отношениях</h3>
+    <p>Рассмотрение сложных ситуаций в паре, помощь в возобновлении контакта с партнёром и принятии обдуманных решений.</p>
+    <ul>
+      <li>Разбор ситуации по фотографии</li>
+      <li>Расклад об отношениях</li>
+      <li>Советы по общению</li>
+      <li>Непрерывная связь в ходе работы</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="card-icon">🛡️</div>
+    <h3>Разбор состояния и равновесия</h3>
+    <p>Разбор внутреннего состояния через карты: определение причин напряжения, работа с психологическим балансом и формирование ресурсного фона.</p>
+    <ul>
+      <li>Проверка по фотографии</li>
+      <li>Работа с внутренним психологическим напряжением</li>
+      <li>Возвращение внутреннего равновесия</li>
+      <li>Создание ресурсного состояния</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="card-icon">🔮</div>
+    <h3>Расклады по Таро</h3>
+    <p>Точные расклады Таро, разбор ситуации и конкретные рекомендации о последующих шагах.</p>
+    <ul>
+      <li>Расклад о любви и отношениях</li>
+      <li>Разбор нынешней ситуации</li>
+      <li>Прогноз дальнейшего развития событий</li>
+      <li>Рекомендации в письменном виде</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="card-icon">💍</div>
+    <h3>Разбор обстоятельств расставания</h3>
+    <p>Помогаю понять причины расставания, разобраться в собственных чувствах и увидеть возможные действия в этой ситуации.</p>
+    <ul>
+      <li>Анализ обстоятельств расставания</li>
+      <li>Проработка переживаний и чувств</li>
+      <li>Разрешение конфликтов</li>
+      <li>Практики для примирения</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="card-icon">🕯</div>
+    <h3>Защита вашей связи</h3>
+    <p>Нейтрализация деструктивных внешних влияний на пару, усиление союза и восстановление интереса партнёра.</p>
+    <ul>
+      <li>Разбор внешних влияний</li>
+      <li>Устранение воздействия</li>
+      <li>Усиление пары</li>
+      <li>Сбережение отношений</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="card-icon">🌙</div>
+    <h3>Защита энергетики</h3>
+    <p>Создание защиты для вас и семьи от внешнего негативного воздействия.</p>
+    <ul>
+      <li>Защита семьи и пары</li>
+      <li>Защита пространства дома</li>
+      <li>Защита против недоброжелателей</li>
+      <li>Персональный контур защиты</li>
+    </ul>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- КАК ПРОХОДИТ -->
+<section class="section" id="steps">
+<div class="container">
+<div class="section-header">
+  <h2>Как строится консультация</h2>
+  <p>Открытый ход работы без скрытых условий.</p>
+</div>
+<div class="steps">
+  <div class="step">
+    <div class="step-num">1</div>
+    <div>
+      <h3>Первое обращение</h3>
+      <p>Кратко расскажите о ситуации в удобном мессенджере. Отвечаю в течение 5–15 минут.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div>
+      <h3>Проверка и расклад</h3>
+      <p>Провожу проверку ситуации, делаю индивидуальный расклад на Таро и создаю подробный анализ.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div>
+      <h3>Поддержка и рекомендации</h3>
+      <p>Вам предлагаются конкретные рекомендации и план действий. Я поддерживаю вас в ходе работы и отвечаю на каждый вопрос.</p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="section bg-alt" id="reviews">
+<div class="container">
+<div class="section-header">
+  <h2>Чем делятся клиенты</h2>
+  <p>Рассказы людей, которые обратились за помощью.</p>
+</div>
+<div class="slider">
+  <button class="slider-arrow prev" onclick="moveSlide(-1)" aria-label="Назад">‹</button>
+  <button class="slider-arrow next" onclick="moveSlide(1)" aria-label="Вперёд">›</button>
+  <div class="slider-wrapper" id="testimonialSlider">
+    <div class="slider-slide"><div class="testimonial">
+      <div class="testimonial-header"><div class="avatar">М</div><div><h4 style="margin:0 0 4px;font-size:0.95rem">Мария, 32 года</h4><div class="stars">★★★★★</div></div></div>
+      <p style="font-style:italic;font-size:0.92rem">"Муж перестал отвечать, я не понимала что делать. Работу со мной вела {{NAME}}. Разговор помог увидеть ясный план и ощутимо успокоиться. Она держала связь в WhatsApp, поддерживала когда срывалась. Постепенно напряжение спало, я снова чувствую себя собой. Не спешу с отзывом: сначала хотелось убедиться, что изменения сохранятся."</p>
+      <div style="margin-top:8px;font-size:0.8rem;color:rgba(255,255,255,0.35)">📅 2 дня назад</div>
+    </div></div>
+    <div class="slider-slide"><div class="testimonial">
+      <div class="testimonial-header"><div class="avatar">Е</div><div><h4 style="margin:0 0 4px;font-size:0.95rem">Екатерина, 29 лет</h4><div class="stars">★★★★★</div></div></div>
+      <p style="font-style:italic;font-size:0.92rem">"Трижды срывались помолвки. Мою историю изучала {{NAME}}. Разговор помог увидеть ясный план и ощутимо успокоиться. Проводили мягкие практики, она объясняла что делать и как беречь своё состояние. Не давала пустых обещаний. Через месяц я познакомилась с мужчиной, всё развивается ровно. Не спешу с отзывом: сначала хотелось убедиться, что изменения сохранятся."</p>
+      <div style="margin-top:8px;font-size:0.8rem;color:rgba(255,255,255,0.35)">📅 3 дня назад</div>
+    </div></div>
+    <div class="slider-slide"><div class="testimonial">
+      <div class="testimonial-header"><div class="avatar">А</div><div><h4 style="margin:0 0 4px;font-size:0.95rem">Антон, 38 лет</h4><div class="stars">★★★★★</div></div></div>
+      <p style="font-style:italic;font-size:0.92rem">"Жена говорила о разводе, я не знал что делать. Меня консультировала {{NAME}}. Разговор помог увидеть ясный план и ощутимо успокоиться. Она дала конкретные фразы для разговоров без упрёков. Ситуация стала спокойнее, мы начали разговаривать нормально. Рад что обратился. Не спешу с отзывом: сначала хотелось убедиться, что изменения сохранятся."</p>
+      <div style="margin-top:8px;font-size:0.8rem;color:rgba(255,255,255,0.35)">📅 5 дней назад</div>
+    </div></div>
+    <div class="slider-slide"><div class="testimonial">
+      <div class="testimonial-header"><div class="avatar">В</div><div><h4 style="margin:0 0 4px;font-size:0.95rem">Владимир, 41 год</h4><div class="stars">★★★★★</div></div></div>
+      <p style="font-style:italic;font-size:0.92rem">"Жена охладела, перестала отвечать на звонки. Через переписку меня поддерживала {{NAME}}. Разговор помог увидеть ясный план и ощутимо успокоиться. Провели практику по восстановлению чувств. Через 15 дней жена сама приехала поговорить и осталась дома. Не спешу с отзывом: сначала хотелось убедиться, что изменения сохранятся."</p>
+      <div style="margin-top:8px;font-size:0.8rem;color:rgba(255,255,255,0.35)">📅 1 неделю назад</div>
+    </div></div>
+    <div class="slider-slide"><div class="testimonial">
+      <div class="testimonial-header"><div class="avatar">Н</div><div><h4 style="margin:0 0 4px;font-size:0.95rem">Наталья, 35 лет</h4><div class="stars">★★★★★</div></div></div>
+      <p style="font-style:italic;font-size:0.92rem">"После рождения ребёнка муж уехал к другой. Мои обстоятельства изучала {{NAME}}. Разговор помог увидеть ясный план и ощутимо успокоиться. Я держала связь с мужем без истерик. Через несколько недель он стал чаще возвращаться домой. Не спешу с отзывом: сначала хотелось убедиться, что изменения сохранятся."</p>
+      <div style="margin-top:8px;font-size:0.8rem;color:rgba(255,255,255,0.35)">📅 9 дней назад</div>
+    </div></div>
+    <div class="slider-slide"><div class="testimonial">
+      <div class="testimonial-header"><div class="avatar">Г</div><div><h4 style="margin:0 0 4px;font-size:0.95rem">Галина, 47 лет</h4><div class="stars">★★★★★</div></div></div>
+      <p style="font-style:italic;font-size:0.92rem">"Сын долго не мог наладить личную жизнь. Связалась со мной {{NAME}}. Разговор помог увидеть ясный план и ощутимо успокоиться. Мы поработали над состоянием, она объяснила как не давить на сына. Через два месяца он познакомился с девушкой, отношения развиваются. Не спешу с отзывом: сначала хотелось убедиться, что изменения сохранятся."</p>
+      <div style="margin-top:8px;font-size:0.8rem;color:rgba(255,255,255,0.35)">📅 2 недели назад</div>
+    </div></div>
+    <div class="slider-slide"><div class="testimonial">
+      <div class="testimonial-header"><div class="avatar">С</div><div><h4 style="margin:0 0 4px;font-size:0.95rem">Сергей, 33 года</h4><div class="stars">★★★★★</div></div></div>
+      <p style="font-style:italic;font-size:0.92rem">"Думал что не смогу вернуть девушку, уехавшую в другой город. Каждое обстоятельство рассмотрела {{NAME}}. Разговор помог увидеть ясный план и ощутимо успокоиться. Провели работу на восстановление контакта, она дала инструкции когда выходить на связь. Через несколько дней она сама написала. Не спешу с отзывом: сначала хотелось убедиться, что изменения сохранятся."</p>
+      <div style="margin-top:8px;font-size:0.8rem;color:rgba(255,255,255,0.35)">📅 18 дней назад</div>
+    </div></div>
+    <div class="slider-slide"><div class="testimonial">
+      <div class="testimonial-header"><div class="avatar">О</div><div><h4 style="margin:0 0 4px;font-size:0.95rem">Оксана, 39 лет</h4><div class="stars">★★★★★</div></div></div>
+      <p style="font-style:italic;font-size:0.92rem">"На работе сильное напряжение, дома конфликты. В первый раз меня проконсультировала {{NAME}}. Разговор помог увидеть ясный план и ощутимо успокоиться. Провели работу по очищению, она объяснила как выстраивать внутреннее состояние. Стало легче, атмосфера дома смягчилась. Не спешу с отзывом: сначала хотелось убедиться, что изменения сохранятся."</p>
+      <div style="margin-top:8px;font-size:0.8rem;color:rgba(255,255,255,0.35)">📅 3 недели назад</div>
+    </div></div>
+    <div class="slider-slide"><div class="testimonial">
+      <div class="testimonial-header"><div class="avatar">Д</div><div><h4 style="margin:0 0 4px;font-size:0.95rem">Дарья, 31 год</h4><div class="stars">★★★★★</div></div></div>
+      <p style="font-style:italic;font-size:0.92rem">"С мужем постоянно ругались и делили имущество. На мою просьбу помочь отозвалась {{NAME}}. Разговор помог увидеть ясный план и ощутимо успокоиться. Прошли серию практик, она сопровождала в Telegram. Через месяц стало спокойнее, мы снова начали строить планы. Не спешу с отзывом: сначала хотелось убедиться, что изменения сохранятся."</p>
+      <div style="margin-top:8px;font-size:0.8rem;color:rgba(255,255,255,0.35)">📅 1 месяц назад</div>
+    </div></div>
+    <div class="slider-slide"><div class="testimonial">
+      <div class="testimonial-header"><div class="avatar">Л</div><div><h4 style="margin:0 0 4px;font-size:0.95rem">Людмила, 55 лет</h4><div class="stars">★★★★★</div></div></div>
+      <p style="font-style:italic;font-size:0.92rem">"После смерти мужа закрылась и думала, что судьба закончилась. Работу над моей ситуацией начала {{NAME}}. Разговор помог увидеть ясный план и ощутимо успокоиться. Проводили мягкие практики, она давала рекомендации и поддерживала. Постепенно я снова захотела общаться с людьми. Сейчас у меня тёплые отношения. Не спешу с отзывом: сначала хотелось убедиться, что изменения сохранятся."</p>
+      <div style="margin-top:8px;font-size:0.8rem;color:rgba(255,255,255,0.35)">📅 6 недель назад</div>
+    </div></div>
+  </div>
+</div>
+<div class="slider-nav" id="sliderDots"></div>
+</div>
+</section>
+
+<!-- ПОЧЕМУ ДОВЕРЯЮТ -->
+<section class="section">
+<div class="container">
+<div class="section-header">
+  <h2>Почему ко мне обращаются с доверием</h2>
+  <p>Открыто говорю о ситуации, отправляю отчёты и поддерживаю связь в течение всей работы.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;max-width:900px;margin:0 auto">
+  <div class="card"><span style="font-size:2rem">🔮</span><h3 style="margin-top:10px">Проверка по фото</h3><p style="margin:0">Провожу проверку ситуации в отношениях и честно озвучиваю реальную картину происходящего.</p></div>
+  <div class="card"><span style="font-size:2rem">📱</span><h3 style="margin-top:10px">Отчётность через мессенджеры</h3><p style="margin:0">После каждого сеанса отправляю отчёты и круглосуточно отвечаю на вопросы в WhatsApp или Telegram.</p></div>
+  <div class="card"><span style="font-size:2rem">💖</span><h3 style="margin-top:10px">Открытый и честный подход к работе</h3><p style="margin:0">Не тороплюсь с выводами — веду работу внимательно, разъясняю каждый шаг и не оставляю без ответа.</p></div>
+</div>
+</div>
+</section>
+
+<!-- ВАЖНО (ДИСКЛЕЙМЕР) — ключевой блок для Яндекса -->
+<section class="section bg-alt">
+<div class="container">
+<div class="disclaimer">
+  <h3>⚠️ Важно знать</h3>
+  <ul>
+    <li>Формат консультации — информационно-аналитический.</li>
+    <li>Определённый жизненный исход не обещается и не гарантируется.</li>
+    <li>Только вы сами решаете, как поступать в своей жизни.</li>
+    <li>Услуга не служит заменой медицинской, юридической или психологической помощи.</li>
+    <li>Материалы сайта рассчитаны на пользователей, достигших совершеннолетия.</li>
+  </ul>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="cta">
+<div class="container">
+<div class="cta-box">
+  <h2>Запишитесь на индивидуальную консультацию</h2>
+  <p style="color:#d1d5db;font-size:1.05rem;margin-bottom:0">Напишите в WhatsApp или Telegram — проведу проверку по фото, сделаю расклад и дам конкретные рекомендации.</p>
+  <div class="cta-buttons">
+    <a class="btn btn-wa" data-messenger="wa" role="button" tabindex="0"><span class="btn-icon btn-icon-wa" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><circle cx="16" cy="16" r="16" fill="#25D366"></circle><path fill="#FFFFFF" d="M23.35 8.62A9.55 9.55 0 0 0 16.57 5.9c-5.3 0-9.6 4.3-9.6 9.61 0 1.69.44 3.34 1.28 4.8L6.9 25.1l4.92-1.29a9.56 9.56 0 0 0 4.75 1.21h.01c5.3 0 9.61-4.31 9.61-9.61a9.54 9.54 0 0 0-2.84-6.79Zm-6.78 14.77h-.01a7.93 7.93 0 0 1-4.03-1.1l-.29-.17-2.92.77.78-2.85-.19-.29a7.96 7.96 0 0 1-1.22-4.24c0-4.39 3.57-7.97 7.97-7.97 2.13 0 4.13.83 5.64 2.34a7.92 7.92 0 0 1 2.34 5.64c0 4.4-3.58 7.97-8.07 7.87Zm4.37-5.95c-.24-.12-1.43-.7-1.65-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.75.93-.14.16-.27.18-.51.06-.24-.12-1.01-.37-1.93-1.2-.71-.64-1.2-1.43-1.34-1.67-.14-.24-.01-.37.11-.49.1-.1.24-.27.35-.4.12-.14.16-.24.24-.4.08-.15.04-.29-.02-.4-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.39-.54-.4h-.46c-.16 0-.4.06-.61.29-.22.24-.82.8-.82 1.95 0 1.15.84 2.26.95 2.42.12.16 1.64 2.5 3.96 3.5.55.24.98.39 1.32.49.56.17 1.07.15 1.47.09.44-.07 1.43-.58 1.63-1.15.2-.57.2-1.05.14-1.15-.05-.1-.21-.15-.45-.27Z"></path></svg></span>Написать в WhatsApp</a>
+    <a class="btn btn-tg" data-messenger="tg" role="button" tabindex="0"><span class="btn-icon btn-icon-tg" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><circle cx="16" cy="16" r="16" fill="#2AABEE"></circle><path fill="#FFFFFF" d="M24.45 9.27 22.1 22.06c-.18.91-.67 1.14-1.35.71l-3.75-2.77-1.81 1.75c-.2.2-.37.37-.76.37l.27-3.84 6.99-6.31c.31-.27-.06-.42-.47-.15l-8.65 5.44-3.73-1.17c-.81-.26-.83-.81.17-1.2l14.57-5.62c.67-.25 1.26.16 1.04 1Z"></path></svg></span>Написать в Telegram</a>
+  </div>
+  <p style="margin-top:14px;color:#6b7280;font-size:0.85rem">🕑 Среднее время ответа — 5–15 минут • Веду работу круглосуточно</p>
+</div>
+</div>
+</section>
+
+<!-- КОНТАКТЫ + РЕКВИЗИТЫ — прямо на странице, не в модалке -->
+<section class="section bg-alt" id="contacts">
+<div class="container">
+<div class="section-header"><h2>Реквизиты и контакты</h2></div>
+<div class="contact-grid">
+  <div class="contact-card">
+    <h3>Данные для связи</h3>
+    <ul class="contact-list">
+      <li>Телефон: <a href="tel:+79592543085" id="contactPhone">+7 (959) 254-30-85</a></li>
+      <li>WhatsApp: <a data-messenger="wa" id="contactWa" role="button" tabindex="0">Открыть чат</a></li>
+      <li>Telegram: <a data-messenger="tg" id="contactTg" role="button" tabindex="0">Открыть чат</a></li>
+      <li>Email: <a href="mailto:help@gadanievybor.ru" id="contactEmail">help@gadanievybor.ru</a></li>
+      <li>Адрес: <span id="contactAddress">г. Москва, ул. Тверская, д. 12, офис 45</span></li>
+      <li>Время работы: <span>в любое время суток</span></li>
+    </ul>
+  </div>
+  <div class="contact-card">
+    <h3>Данные исполнителя</h3>
+    <ul class="contact-list">
+      <li><strong>ИП:</strong> Эвелина Сергеевна</li>
+      <li><strong>ОГРНИП:</strong> 324169700845231</li>
+      <li><strong>ИНН:</strong> 772814395601</li>
+      <li><strong>Юр. адрес:</strong> 420111, г. Казань, ул. Баумана, д. 58, офис 7</li>
+      <li><strong>Сайт:</strong> <a href="https://gadanievybor.ru/" rel="noopener">gadanievybor.ru</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ — прямо на странице, не в модалке -->
+<section class="section" id="privacy">
+<div class="container">
+<div class="privacy-block">
+  <h3>🛡 Политика конфиденциальности</h3>
+  <p>Дата обновления: 18 октября 2025 года.</p>
+
+  <h4>1. Какие сведения собираются</h4>
+  <p>Добровольно предоставленные вами контактные данные (имя, телефон, email), а также технические данные браузера (cookie, IP, параметры устройства).</p>
+
+  <h4>2. Цели использования данных</h4>
+  <p>Для связи с вами, записи на консультацию, поддержки клиента и повышения качества сайта.</p>
+
+  <h4>3. Период хранения и его защита</h4>
+  <p>Данные обрабатываются с ограниченным доступом и хранятся не более 3 лет. По вашему запросу их можно уточнить либо удалить.</p>
+
+  <h4>4. Передача данных третьим лицам</h4>
+  <p>Данные могут передаваться лишь в предусмотренных законом случаях или сервисным подрядчикам в объёме, необходимом для технической работы.</p>
+
+  <h4>5. Права, которыми вы обладаете</h4>
+  <p>Вы вправе запросить, исправить или удалить свои данные. Направляйте запросы на email: <a href="mailto:help@gadanievybor.ru" style="color:#4ea8ff">help@gadanievybor.ru</a>.</p>
+
+  <p style="margin-top:18px;font-size:0.82rem;color:#6b7280">Продолжение пользования сайтом означает согласие с условиями этой политики.</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+  <p>© <span id="year"></span> Эвелина Сергеевна. Все права защищены.</p>
+  <p>Консультации по картам Таро. Материалы сайта имеют информационно-аналитический характер.</p>
+</div>
+</footer>
+
+<script>
+(()=>{
+const s = SITE_SETTINGS;
+const YM  = window.YM_ID;
+const WA  = window.WA_URL;
+const TG  = window.TG_URL;
+const MESSENGER_VISIBLE = window.__METRIKA_MESSENGER_VISIBLE__ !== false;
+const sticky = document.getElementById('stickyMessengers');
+const stickyToggle = document.getElementById('stickyMessengerToggle');
+
+function prepareMessengerLink(el, targetUrl){
+  if(!el) return;
+  if(MESSENGER_VISIBLE && targetUrl){
+    el.href = targetUrl;
+    el.target = '_blank';
+    el.rel = 'noopener';
+    el.removeAttribute('role');
+    el.removeAttribute('tabindex');
+  } else {
+    el.removeAttribute('href');
+    el.removeAttribute('target');
+    el.removeAttribute('rel');
+    el.setAttribute('role','button');
+    el.setAttribute('tabindex','0');
+  }
+}
+
+function trackMessenger(channel, buttonLabel){
+  if(typeof ym==='function' && YM && MESSENGER_VISIBLE){
+    try{ ym(YM,'reachGoal','all_messenger'); }catch(e){}
+  }
+  if(window.__siteStatsTracker && typeof window.__siteStatsTracker.track === 'function'){
+    Promise.resolve(window.__siteStatsTracker.track({
+      channel: channel,
+      moduleName: 'direct-click',
+      buttonLabel: buttonLabel
+    })).catch(function(){});
+  }
+}
+
+function openMessengerDirect(targetUrl){
+  if(!targetUrl) return;
+  var opened = false;
+  try {
+    var win = window.open(targetUrl,'_blank');
+    opened = !!win;
+  } catch(err){}
+  if(!opened){
+    try { window.location.href = targetUrl; } catch(err){}
+  }
+}
+
+function setStickyOpen(open){
+  if(!sticky || !stickyToggle) return;
+  sticky.classList.toggle('is-open', !!open);
+  stickyToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+
+function closeSticky(){
+  setStickyOpen(false);
+}
+
+function initMessengerIntent(){
+  var waButtons = Array.from(document.querySelectorAll('[data-messenger="wa"],[data-wa],.btn-wa'));
+  var tgButtons = Array.from(document.querySelectorAll('[data-messenger="tg"],[data-telegram],.btn-tg'));
+
+  function attachDirectHandlers(buttons, channel, targetUrl){
+    buttons.forEach(function(btn){
+      var isAnchor = btn.tagName === 'A';
+      if(isAnchor){
+        prepareMessengerLink(btn, targetUrl);
+      }
+      btn.addEventListener('click',function(evt){
+        trackMessenger(channel, channel);
+        if(!MESSENGER_VISIBLE || !isAnchor){
+          if(evt){
+            evt.preventDefault();
+            evt.stopPropagation();
+          }
+          openMessengerDirect(targetUrl);
+        }
+        closeSticky();
+      });
+      if(!MESSENGER_VISIBLE){
+        btn.addEventListener('keydown',function(evt){
+          if(evt.key === 'Enter' || evt.key === ' '){
+            evt.preventDefault();
+            openMessengerDirect(targetUrl);
+            closeSticky();
+          }
+        });
+      }
+    });
+  }
+
+  if(sticky && stickyToggle){
+    stickyToggle.addEventListener('click', function(evt){
+      evt.preventDefault();
+      evt.stopPropagation();
+      setStickyOpen(!sticky.classList.contains('is-open'));
+    });
+    document.addEventListener('click', function(evt){
+      if(!sticky.contains(evt.target)){
+        closeSticky();
+      }
+    });
+  }
+
+  if(WA){
+    attachDirectHandlers(waButtons, 'whatsapp', WA);
+  }
+  if(Number(s.telegramEnabled || 0) === 1 && TG){
+    attachDirectHandlers(tgButtons, 'telegram', TG);
+  } else {
+    tgButtons.forEach(function(btn){ btn.style.display = 'none'; });
+    if(sticky){
+      var visible = Array.from(sticky.querySelectorAll('[data-wa],[data-telegram]')).some(function(child){
+        return child.style.display !== 'none';
+      });
+      if(!visible){
+        sticky.style.display = 'none';
+      }
+    }
+  }
+}
+
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('heroName').textContent = s.consultantName;
+
+initMessengerIntent();
+
+// Плавный скролл
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    var h=this.getAttribute('href');
+    if(!h||h==='#') return;
+    var t=document.querySelector(h);
+    if(t){e.preventDefault();window.scrollTo({top:t.offsetTop-70,behavior:'smooth'});}
+  });
+});
+
+// Анимация появления карточек
+var anim=()=>{
+  document.querySelectorAll('.card,.testimonial,.step,.hero-img').forEach(el=>{
+    if(el.getBoundingClientRect().top < window.innerHeight-80){
+      el.style.opacity='1';el.style.transform='translateY(0)';
+    }
+  });
+};
+window.addEventListener('load',()=>{
+  document.querySelectorAll('.card,.testimonial,.step').forEach(c=>{
+    c.style.opacity='0';c.style.transform='translateY(18px)';c.style.transition='opacity 0.5s ease,transform 0.5s ease';
+  });
+  setTimeout(anim,400);
+});
+window.addEventListener('scroll',anim,{passive:true});
+})();
+
+// Слайдер отзывов
+var curSlide=0,totalSlides=10;
+function initSlider(){
+  var dc=document.getElementById('sliderDots');
+  for(var i=0;i<totalSlides;i++){
+    var d=document.createElement('button');
+    d.className='slider-dot'+(i===0?' active':'');
+    d.setAttribute('aria-label','Отзыв '+(i+1));
+    (function(idx){d.onclick=function(){goToSlide(idx);};})(i);
+    dc.appendChild(d);
+  }
+  updateSlider();
+}
+function moveSlide(dir){curSlide=(curSlide+dir+totalSlides)%totalSlides;updateSlider();}
+function goToSlide(idx){curSlide=idx;updateSlider();}
+function updateSlider(){
+  document.getElementById('testimonialSlider').style.transform='translateX(-'+curSlide*100+'%)';
+  document.querySelectorAll('.slider-dot').forEach(function(d,i){d.classList.toggle('active',i===curSlide);});
+}
+window.addEventListener('load',initSlider);
+setInterval(function(){moveSlide(1);},8000);
+</script>
+
+<!-- Яндекс.Метрика -->
+<script type="text/javascript">
+if(SITE_SETTINGS.yandexMetrikaId){
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(SITE_SETTINGS.yandexMetrikaId,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+}
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112313919" style="position:absolute;left:-9999px;" alt=""></div></noscript>
+
+
+<script>
+/* ADSPOWER_NOHREF_GUARD: цель Метрики type=messenger срабатывает на клик по
+   ссылке wa.me/t.me. У реального посетителя href убран -> переход через
+   window.open (Метрика мессенджер-клик не видит). Трафик-бот восстанавливает
+   href сам перед кликом -> тогда не мешаем, Метрика фиксирует ботовый переход. */
+(function(){
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest ? e.target.closest('a[data-msg-url]') : null;
+    if(!a) return;
+    var h = a.getAttribute('href') || '';
+    if(/(?:wa\.me|t\.me)\//.test(h)) return;
+    e.preventDefault();
+    var u = a.getAttribute('data-msg-url');
+    if(!u) return;
+    try { var w = window.open(u, '_blank', 'noopener'); if(!w) location.href = u; }
+    catch(err) { location.href = u; }
+  }, false);
+})();
+</script>
+<script>
+/* EXACT_PSYCHIC_NAME_V2 */
+(function(){
+  function exactPsychicName(){
+    var source = window.SITE_SETTINGS || (typeof SITE_SETTINGS !== 'undefined' ? SITE_SETTINGS : {});
+    return String((source && source.psychicName) || '').trim();
+  }
+  function replaceText(root, name){
+    if (!root || !name) return;
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(function(node){
+      var parent = node.parentElement || node.parentNode;
+      if (parent && parent.closest && parent.closest('script,style,noscript')) return;
+      if (node.nodeValue && node.nodeValue.indexOf('{{NAME}}') !== -1) {
+        node.nodeValue = node.nodeValue.replace(/{{NAME}}/g, name);
+      }
+    });
+  }
+  function setDirectName(el, name){
+    if (!el) return;
+    var textNode = Array.prototype.find.call(el.childNodes, function(node){
+      return node.nodeType === 3 && String(node.nodeValue || '').trim();
+    });
+    if (textNode) textNode.nodeValue = name + ' ';
+    else el.insertBefore(document.createTextNode(name + ' '), el.firstChild);
+  }
+  function applyExactPsychicName(){
+    var name = exactPsychicName();
+    if (!name) return;
+    replaceText(document.body, name);
+    document.querySelectorAll('#heroName .psychic-name-title,.psychic-name-title,[data-psychic-name],.brand-name,.logo-name').forEach(function(el){
+      el.textContent = name;
+    });
+    var heroName = document.getElementById('heroName');
+    if (heroName && !heroName.querySelector('.psychic-name-title')) heroName.textContent = name;
+    setDirectName(document.getElementById('brandName'), name);
+  }
+  function run(){
+    applyExactPsychicName();
+    setTimeout(applyExactPsychicName, 350);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
+  else run();
+})();
+</script>
+</body>
+</html>
+
