@@ -30,8 +30,8 @@ const SITE_SETTINGS = {
   'psychicName': 'Оксана Юрьевна',
   'metrikaMessengerVisible': false
 ,
-  "maxEnabled": false,
-  "maxUrl": ""
+  "maxEnabled": true,
+  "maxUrl": "https://web.max.ru/:push?userId=149400826"
 };
 (function(){
   var s = SITE_SETTINGS;
@@ -1209,9 +1209,9 @@ ym(SITE_SETTINGS.yandexMetrikaId,"init",{clickmap:true,trackLinks:true,accurateT
         if (url.pathname !== '/:push') return '';
         const userId = String(url.searchParams.get('userId') || '').trim();
         if (!/^\d+$/.test(userId)) return '';
-        // MAX documents app links on max.ru. Android/iOS can hand this HTTPS
-        // URL to the installed client while browsers retain a valid fallback.
-        return 'https://max.ru/:push?userId=' + encodeURIComponent(userId);
+        // Native MAX resolves the contact identifier through the uid parameter.
+        // The web client uses userId, so keep the stored URL for desktop.
+        return 'https://max.ru/:push?uid=' + encodeURIComponent(userId);
       } catch (_) { return ''; }
     }
 
